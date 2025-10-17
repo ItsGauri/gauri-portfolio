@@ -44,21 +44,16 @@ const About = () => {
         <div className="bg-gradient-card rounded-3xl p-10 shadow-elegant">
           <div className="max-w-3xl mx-auto space-y-6 text-center">
             <p className="text-lg text-card-foreground leading-relaxed">
-              I'm passionate about building products that create real impact. My technical foundation in software engineering, 
-              combined with my experience in <span className="font-semibold text-primary">delivering client demos, walkthrough videos, and stakeholder presentations</span>, 
-              has shaped my ability to bridge technology and business.
+              I'm passionate about transforming ideas into meaningful digital products that drive real impact. With a strong foundation in software engineering and hands-on experience across client demos, product walkthroughs, and stakeholder communication, I've learned how to bridge technical precision with business vision.
             </p>
             
-            <blockquote className="text-xl italic text-primary font-medium border-l-4 border-primary pl-6 py-4 my-8 text-left">
-              "I delivered client demos, walkthrough videos, and stakeholder presentations — bridging technology and business."
-            </blockquote>
+            <p className="text-lg text-card-foreground leading-relaxed">
+              My experience has taught me that great products are built not just with code, but with clarity, empathy, and collaboration — principles I bring into every project I work on.
+            </p>
 
-            <div className="bg-secondary/30 rounded-2xl p-6 border-2 border-primary/20">
-              <p className="text-base text-card-foreground">
-                <span className="font-semibold text-primary">Fun fact:</span> I'm a trained classical dancer who has been featured on national television, 
-                bringing the same dedication and performance excellence to product management.
-              </p>
-            </div>
+            <blockquote className="text-xl italic text-primary font-medium border-l-4 border-primary pl-6 py-4 my-8 text-left">
+              "From delivering client demos to leading product presentations, I thrive at the intersection of technology, users, and strategy."
+            </blockquote>
 
             <div className="pt-6">
               <Button 

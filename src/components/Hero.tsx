@@ -50,25 +50,35 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 pt-8">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-primary text-primary-foreground shadow-glow hover:shadow-glow hover:scale-105 transition-all duration-300 border-0 px-8 py-6 text-base"
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <ExternalLink className="mr-2 h-5 w-5" />
                 View My Projects
               </Button>
-              
-              <Button 
-                size="lg" 
+
+              {/* Download Resume as an anchor (styled via Button using asChild) */}
+              <Button
+                size="lg"
                 className="glass-panel hover:bg-primary/20 text-foreground transition-all duration-300 hover:scale-105 px-8 py-6 text-base"
+                asChild
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
+                <a
+                  href="/resume.pdf"
+                  download="Gauri_Sharma_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download resume"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </a>
               </Button>
-              
-              <Button 
-                size="lg" 
+
+              <Button
+                size="lg"
                 className="glass-panel hover:bg-primary/20 text-foreground transition-all duration-300 hover:scale-105 px-8 py-6 text-base"
                 asChild
               >
@@ -84,20 +94,20 @@ const Hero = () => {
           <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative glass-panel rounded-3xl overflow-hidden shadow-glow group">
               <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10"></div>
-              <img 
-                src={gauriPortrait} 
+              <img
+                src={gauriPortrait}
                 alt="Gauri Sharma - Software Engineer transitioning to Product Management"
                 className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent z-20"></div>
-              
+
               {/* Floating Badge */}
               <div className="absolute bottom-6 left-6 right-6 glass-panel rounded-2xl p-4 z-30 backdrop-blur-xl">
                 <p className="text-sm font-semibold text-foreground">Product Mindset</p>
                 <p className="text-xs text-muted-foreground">Engineering Background</p>
               </div>
             </div>
-            
+
             {/* Glow Effect */}
             <div className="absolute -z-10 top-8 -right-8 w-full h-full rounded-3xl bg-gradient-primary opacity-30 blur-3xl"></div>
             <div className="absolute -z-10 -bottom-8 -left-8 w-full h-full rounded-3xl bg-accent/20 opacity-30 blur-3xl"></div>

@@ -30,7 +30,7 @@ const Contact = () => {
               href="mailto:gaurisharma123@gmail.com"
               className="text-lg font-medium text-primary hover:underline"
             >
-              gaurisharma123@gmail.com
+              gaurisharma098@gmail.com
             </a>
           </Card>
 
